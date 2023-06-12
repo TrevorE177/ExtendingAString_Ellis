@@ -35,8 +35,8 @@ namespace ExtendingAString_Ellis
             string _reverseString2 = "Oppih";
 
             Console.WriteLine(_reverseString1.ReverseString());
-            _reverseString2.ReverseString(false);
-            _reverseString2.ReverseString(true);
+            Console.WriteLine(_reverseString2.ReverseString(true));
+            Console.WriteLine(_reverseString2.ReverseString(false));
 
             Console.WriteLine();
 
@@ -54,22 +54,27 @@ namespace ExtendingAString_Ellis
             // 4:
             Console.WriteLine("#4:");
 
-            string _removeMultiples = "grasshopper";
+            string _removeMultiples = "Grasshopper";
 
-            Console.WriteLine(_removeMultiples.RemoveDuplicateCharacters);
+            Console.WriteLine(_removeMultiples.RemoveDuplicateCharacters());
 
             Console.WriteLine();
 
             // 5:
             Console.WriteLine("#5:");
 
-            string _string = "noodles";
+            string _string1 = "noodles";
+            string _string2 = "xxxOOOO";
+            string _string3 = "voooooweeeels";
+            string test = "FooooUR";
+            string test1 = "a";
 
-            Console.WriteLine(_string.CountOccurrences());
-            Console.WriteLine(_string.CountOccurrences(Extenion_Methods.choice.maxOcc));
-            Console.WriteLine(_string.CountOccurrences(Extenion_Methods.choice.minOcc));
-            Console.WriteLine(_string.CountOccurrences(Extenion_Methods.choice.maxOccVow));
-            Console.WriteLine(_string.CountOccurrences(Extenion_Methods.choice.minOccVow));
+            Console.WriteLine(_string1.CountOccurrences());
+            Console.WriteLine(_string1.CountOccurrences(Extension_Methods.choice.maxOcc));
+            Console.WriteLine(_string2.CountOccurrences(Extension_Methods.choice.minOcc));
+            Console.WriteLine(_string3.CountOccurrences(Extension_Methods.choice.maxOccVow));
+            Console.WriteLine(test.CountOccurrences(Extension_Methods.choice.minOccVow));
+            Console.WriteLine(test1.CountOccurrences(Extension_Methods.choice.minOccVow));
         }
     }
 }
